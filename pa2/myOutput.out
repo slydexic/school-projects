@@ -1,0 +1,6 @@
+Reading in File: usconst.txt
+Removing common words
+Displaying the top 10 words
+United(85) President(72) States,(58) State(49) States(47) Congress(39) Amendment(34) Person(33) House(27) President,(26) 
+
+Count should be 0. It is...0

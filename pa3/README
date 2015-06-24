@@ -1,0 +1,29 @@
+SHORT RESPONSE ---------------
+
+1. Let n be the desired line number. Type ':n'
+   in command mode to go to line n.
+2. In command mode, type ':set ai' to turn on auto-indent.
+   To turn off auto-indent, type ':set noai'.
+3. To undo changes, type 'u' in command mode.
+4. To move forward one word, type 'w' in command mode.
+   To move backward one word, type 'b'.
+5. To remove all .class files in a Unix directory,
+   type 'rm *.class' .
+6. In your working directory, let F be the name of the
+   folder you want to delete. If F is non-empty, 
+   type 'rm -rf F'. If F is empty, type 'rmdir F'.
+   The first command recursively deletes the the contents of F.
+   So it deletes the contents at the end of the path directory
+   until it reaches F then deletes F. The second command simply deletes F.
+7. To clear the terminal screen, type 'clear'.
+
+PROGRAM DESCRIPTION --------------
+
+The Board.java file handles the game board for 2048. The game board can
+start out as a brand new board or a board from a saved game. The file
+also lets you add random tiles to the board or save the board you are
+currently using. The file also checks if any moves are valid on the board
+and if the game is over.
+The GameManager.java file plays the game for the user. GameManager is the 
+interface for the user. It takes input from the user and sends output from
+the Board file. So it is like the middleman. 

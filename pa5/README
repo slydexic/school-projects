@@ -1,0 +1,36 @@
+SHORT RESPONSE ---------------------------
+
+1. To turn off the coloring of special words, type ':set syntax=off'.
+   To turn the special coloring back on, type ':set syntax=on'.
+2. To highlight/select a line, hit the keys 'Shift' then 'v'.
+3. To extract from columns 5 to 13, type 'cut -c5-13 foo'.
+4. A way to do this would be:
+	
+	int[] array = {1,3,5,7,9};
+
+PROGRAM DESCRIPTION --------------------------
+
+This is a game that has animals in it. The animals can move, fight, sleep,
+die, eat, and mate. Each animal has specific behaviors. The game is run
+on a field that has animals running around and food on the ground. When
+an animal of the same species meet, they will mate. Animals can randomly
+fall alseep as well after eating. When an animal is mating or sleeping, any other animal
+will kill it. When an animal fights, it can Scratch, Pounce, or Roar.
+Roar beats Scratch, Scratch beats Pounce, and Pounce beats Roar. If
+both animals use the same attacking move, then one of them randomly wins.
+
+The bear can be a grizzly (brown) or polar (white) bear. The bear always moves
+southeast, is always hungry, and when a fight occurs, will always scratch,
+and is represented by a 'B'.
+
+The Lion moves clockwise, is red, represented by 'L', and always attacks with
+Roar against a bear and Pounce otherwise. The Lion will is only hungry after
+fighting. Once if has eaten, it is no longer hungry until another fight occurs.
+
+The Tiger is yellow, represented by a random non-negative integer, and moves 
+3 steps in a random direction. The Tiger has a hunger level and is shown
+in the game by the integer. If the integer is positive, then the Tiger
+is hungry. Everytime the Tiger eats, the hunger level decreases by 1 and
+is updated in the game. When the Tiger is hungry, it will always Scratch
+in a fight, otherwise it will Pounce.
+

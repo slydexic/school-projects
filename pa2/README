@@ -1,0 +1,32 @@
+SHORT RESPONSE -----------------
+
+1. To switch from insert mode to command mode in vim, you press the 'Esc' key.
+2. Two ways to enter insert mode from command mode is to press either the
+   'i' key or 'a' key, insert and append respectively.
+3. a) To quit a file in vim, you type ':q' in command mode.
+   b) To quit without saving, you type ':q!' in command mode.
+4. a) To save a file, you type ':w' in command mode.
+   b) To save a file and quit with one command, you type ':wq'
+      in command mode.
+5. a) To change directories in command line, you type 'cd'
+      followed by the path of the desired directory.
+   b) To change to the home directory, you type 'cd ~'.
+6. To make a directory, you type 'mkdir' followed by the
+   name of the new directory.
+7. To show the current working directory, you type 'pwd'.
+
+PROGRAM DESCRIPTION -------------------
+
+This program consists of two java files, WordCloud.java and WordPair.java.
+The WordPair file contains a class to make WordPair objects. WordPair objects
+can hold one word and the number of times a word appears in a text file.
+The WordCloud file contains the WordCloud class to make WordCloud objects.
+The WordCloud object has an ArrayList object that holds the WordPair objects.
+Thus you can think of the WordCloud object as an actual "word cloud".
+The WordCloud can read a text file and take all the unique words found by
+creating WordPair objects and putting them in to the ArrayList.
+We can also remove WordPair objects that have words we don't want.
+In particular, this WordCloud removes common words such as 'the' or 'a'.
+After the WordCloud runs through a file, it can also find and show you
+the top number of words that appear in the file. It can also find and show
+you the number of times a specific word appears.

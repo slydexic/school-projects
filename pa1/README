@@ -1,0 +1,86 @@
+BUGS AND FIXES-------------------------
+
+Bug: public static findMax( int[] array )
+Fix: public static int findMax( int[] array )
+The method findMax needed to return an int type
+
+Bug: public int findMin( int array )
+Fix: public static int findMin( int[] array )
+The parameter needed to be declared as an int array, not int.
+The method also needed to be a class method by adding static.
+
+Bug: min = array[0];
+Fix: int min = array[0];
+The variable wasn't declared as an int type.
+
+Bug: for ( int i = 0; i <= array.length; i++ )
+Fix: for ( int i = 0; i < array.length; i++ )
+The loop stopped at the length of the array, not the last index of the array.
+
+Bug: if ( array != null )
+Fix: if ( array == null )
+The condition for the if-statement was wrong.
+
+Bug: result[i++] = array[i];
+Fix: result[i] = array[i];
+The index i did not need to be incremented in this line.
+
+Bug: min = i;
+Fix: min = array[i];
+The variable min needed to be assigned to the next lowest number in the array,
+not the index.
+
+Bug: for ( int i = 0, int j = array.length - 1;
+	i < array.length; i++, j--) {
+
+	array[j] = array[i];
+     }
+Fix: for ( int i = 0, int j = array.length - 1;
+	i < array.length/2, j > array.length/2; i++, j--) {
+	
+	int value = array[j];
+        array[j] = array[i];
+	array[i] = value;
+The loop had no condition for the index j and index i needed to stop at
+half the length of the array, not the whole array. Also, the original loop
+performed a palindrome. So the original loop needed extra lines in the body
+to correctly reverse the array.
+
+PROGRAM DESCRIPTIONS -----------------------------
+
+File: FunWithIntArrays.java
+
+This program shows the minimum and maximum values in an array.
+It also creates a copy of the array and reverses the values
+in the array. To find the minimum and maximum values in an array,
+the methods findMin and findMax the methods take the first element
+in the array and then compares it with the next element in the array.
+If the first element is smaller or bigger than the next element
+then the method believes the next element is the minimum/maximum.
+This is repeated until there are no more elements left to compare and
+the element that the method believes to be the minimum/maximum
+is taken as the minimum/maximum. To copy the array, the method
+creates an array with equal length to the original array. Then the
+elements are copied to the new array. To reverse the elements in
+the array, we create a new array, but instead we copy the problems
+from right to left instead of left to right.
+
+File: Caesar.java
+
+This program encrypts or decrypts a given message and given rotation.
+To encrypt a message we take the letters of the message and shift them.
+First we take a character in the message, if it is a letter then we check
+if it is uppercase or lowercase. Either case, we then take the decimal
+value of the letter, which is the assigned number to the letter.
+We then find the difference between the original letter and the new
+letter by using the given rotation value. We do this by taking the 
+rotation modulus 26. This gives us the difference, which is between
+0 to 25. We do this because the difference in position of letters is
+at most 25 letters away. We then find the decimal value of the new
+letter because we found the difference in position. Then we take that
+new letter and put it into an array. We repeat this process for
+each character in the message. Note, if the character is not a message
+we simply copy the character in to the array and move on to the next
+character. The decryption is the same as encryption. The only difference
+is the purpose. Encryption is hiding messages, decryption is revealing
+messages. So they are the same process.

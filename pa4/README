@@ -1,0 +1,29 @@
+SHORT RESPONSE ---------------------------
+
+1. Suppose Desktop/f1/f2/f3 is your working directory. Let fubar.java be
+   in the Desktop. To copy fubar.java to f3, you type:
+   'cp ~/Desktop/fubar.java ~/Desktop/f1/f2/f3/fubar.java'
+
+2. 'man cat' prints out the user manual for using the command 'cat',
+   which is short for concatenate.
+3. Let n be the desired line number. Type ':n' to jump to n.
+4. Hitting the 'g' key twice jumps you to the beginning of the file.
+   Hitting 'Shift' then 'g' takes you to the beginning of the last line.
+5. A constructor must have a name, which is the same name as the class, and
+   must also have a visibility statement (public, private,...) .
+6. A static variable allows all objects of that class to share
+   the static variable.
+
+PROGRAM DESCRIPTION -----------------------
+
+The combination of all files make the game 2048. The purpose of this game
+is to get the highest score by moving tiles up, down, left or right.
+For each direction, all tiles will move as far as possible. A tile stops
+if a tile cannot combine with a another tile of same value or if the
+tile reaches the end of the board. When a tile combines, the score is
+increased by the value of the new tile. The game ends when no tile can
+move in any direction. The core classes that are involved in 2048 are
+Board.java or GameManager.java . The Board file handles all movement
+of tiles, the size of the board, and saving the board. The GameManager
+file let's you play the game. It prints out the interface and updates
+the game after each move.

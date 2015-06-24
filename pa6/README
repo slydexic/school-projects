@@ -1,0 +1,53 @@
+SHORT RESPONSE -------------------------
+
+1. To indent N consecutive lines, hit the number 'N' on the
+   keyboard, then followed by two '>'. So 'N>>'. To de-indent,
+   do 'N<<'.
+
+2. To indent an entire curly-bracket block one level, type '>%'.
+   To de-indent, type '<%'.
+
+3. To insert one line below and go into insert mode with one command,
+   type 'o'.
+
+PROGRAM DESCRIPTION --------------------------------
+
+The MyCritter.java file is a program for a Critter in the Critter Simulation
+game. This critter has unique behaviors. The defining behaviors are its
+fighting styles and its representation. The critter pretends to be a bear
+to force other critters to attack using moves that would kill bears. The
+fighting styles revolve around this idea. The first style is meant to
+kill everything but the Hard bot in the game. The second style is meant
+to kill the Hard bot. Both styles could kill otherwise, but both styles
+have a clear target. Since MyCritter pretends to be a bear, it will counter
+most attacking moves from most of the other critters in the game. MyCritter
+also moves by randomly moving either north,south,east, or west for five
+steps, then moves randomly in another direction. MyCritter always
+eats as well to gain points, and it represented as a blue capital 'B'.
+
+
+The ReverseRecurse.java file is a program meant to reverse integers.
+The user determines how many integers to input and decides what integers
+to have. The program can handle errors such as having a negative
+number of integers or not choosing a size. The latter occurs if the user
+decides to exit the program. The program can also handle cases where
+the user puts more or less integers than what was desired. In either
+case, the program will adjust the size of the array that holds the
+integers. Once the integers have been chosen, the program will reverse
+the order of the integers by recursion, a problem solving technique.
+
+The first way to reverse the integers is by switching them within
+the array that holds them. The program will first switch the first
+and last integers, then proceed to call the method to reverse the
+remaining unreversed integers. This process
+stops once the array has one or two unreversed integers left.
+This is called the base case.
+
+The second way to reverse the integers is by creating another
+array that holds the reversed integers. The base for this will
+be when the remaining portion of the array has 1 or 2 integers
+left. The program first copies the first and last integers of the
+original array and switch their position in the second array.
+Then the portion of the original array that hasn't been reversed
+is processed. This stops once the last portion of the array has
+1 or 2 integers. Then the second array is returned.

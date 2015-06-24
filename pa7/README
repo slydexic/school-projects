@@ -1,0 +1,19 @@
+SHORT RESPONSE ------------------------------
+
+1. To test if CSE8B_Line line2 = new CSE8B_Line(line1); is
+   a deep copy, change one of the points of line1 and check if
+   line2's points are the same as line1 afterwards. If so, then it is a
+   shallow copy. Otherwise, it is a deep copy.
+
+2. To check if equals is doing a deep comparison or shallow
+   comparison, change one of the points of line1 and apply
+   the method afterwards. If true, then the equals method is
+   doing a shallow comparison. Otherwise, it is a deep comparison.
+
+PROGRAM DESCRIPTION -------------------------------
+
+The program contains classes that represent various shapes and a point.
+They all have specific variables for their dimensions and positions.
+The program will draw these shapes onto a canvas based on their
+variables. They can be filled in shapes or outlines of the shapes.
+They can also have colors. The shapes can be moved and redefined.

@@ -1,0 +1,35 @@
+SHORT RESPONSE --------------------
+
+1. To set a mark using register 'a', type 'ma'.
+2. To go to your mark at 'a', type (`a) without
+   the parentheses.
+
+3. Let 'foo' be a file. To show the first five lines of foo,
+   type 'head -5 foo'. To show the last five lines of foo,
+   type 'tail -5 foo'.
+
+4. To transfer files between accounts, use the
+   command 'scp'.
+
+5. The toString() method is called in class Rect if Rect has
+   its own toString() method. Otherwise, toString() will be called
+   in the ARectangle class.
+6. super() is called in a class' constructor.
+
+PROGRAM DESCRIPTION -----------------------
+
+The CS8BTurtle.java file contains a subclass of Turtle. It is a specific
+turtle that will draw specific characters. It will draw:
+
+	CS8BEQ
+	SPRING
+	 2015
+
+with one turtle.
+
+The CS8BTurtle_Threaded.java file is a subclass of Turtle and also
+implements the Runnable interface. This allows turtles to draw the
+above image simultaneously as opposed to a single turtle. The
+interface allows the turtle objects to go through their own
+"Threads" which allow them to draw on their own. Each creation
+of a Turtle will open up a Thread.

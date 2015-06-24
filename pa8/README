@@ -1,0 +1,19 @@
+1) To replace every instance of "fun", type ':%s/fun/amazing/g'
+   in command mode. To replace the first "fun" in every line
+   type ':%s/fun/amazing/'.
+
+2) type 'mkdir -p fooDir/barDir'.
+
+3) 'javac *.java' will compile all files with java extension.
+4) Type 'gvim -p *.java' in the terminal.
+
+5) A static keyword used with a method allows a method to
+   be called on the class. For example 'Integer.toString()'.
+
+6) She needs to make an abstract Shape class with the shapes
+   she wants as subclasses of Shape. In her Shape class, she
+   needs to make an abstract draw method so that all subclasses
+   can implement them. Also the Shape class should have a Color
+   class variable as well. Now she will be able to call the
+   draw method that will draw the shapes corresponding to the
+   shape objects and desired colors.
